@@ -1,0 +1,27 @@
+{
+    "name": "kpicaza/redis-etag-cache",
+    "description": "This package helps to implement etag cache.",
+    "keywords": [],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Koldo Picaza",
+            "email": "kpicaza.sound@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "predis/predis": "^1.0",
+        "kpicaza/etag-cache": "^0.0.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.3",
+        "fzaninotto/Faker": "^1.6",
+        "m6web/redis-mock": "~2.0"
+    },
+    "autoload": {
+        "psr-4": { "Kpicaza\\RedisETagCache\\": "" }
+    },
+    "minimum-stability": "dev"
+}
