@@ -3,11 +3,10 @@ namespace Kpicaza\Tests\RedisETagCache;
 
 use Kpicaza\RedisETagCache\RedisETagCache;
 use Kpicaza\RedisETagCache\RedisETagGenerator;
-use PHPUnit\Framework\TestCase;
 use M6Web\Component\RedisMock\RedisMockFactory;
 use Faker;
 
-class CacheTest extends TestCase
+class CacheTest extends \PHPUnit_Framework_TestCase
 {
     const FIXED_ID = '/api/users';
     const STRING_VALUE = 'MyStringValue';
