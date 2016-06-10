@@ -11,12 +11,11 @@ class RedisETagGenerator implements ETagGeneratorInterface
     /**
      * @param $content
      * @return string
-     * @throws EmptyETagException
      */
     public function create($content)
     {
         if (empty($content)) {
-            throw new EmptyETagException('You must add some content.');
+            return;
         }
 
         return md5($content);

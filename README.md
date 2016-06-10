@@ -1,5 +1,9 @@
 # RedisETagCache
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/kpicaza/RedisETagCache/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/kpicaza/RedisETagCache/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/kpicaza/RedisETagCache/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/kpicaza/RedisETagCache/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/kpicaza/RedisETagCache/badges/build.png?b=master)](https://scrutinizer-ci.com/g/kpicaza/RedisETagCache/build-status/master)
+
 ## Requirements:
 
 This package depends on [Predis](https://packagist.org/packages/predis/predis). See installation instruction at [Github repo](https://github.com/nrk/predis).

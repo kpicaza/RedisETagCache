@@ -1,8 +1,9 @@
 <?php
 namespace Kpicaza\RedisETagCache;
 use Kpicaza\ETagCache\ETagCacheInterface;
-use Predis\Client;
 use Kpicaza\ETagCache\ETagGeneratorInterface;
+use Predis\ClientInterface;
+
 /**
  * Class RedisETagCache
  * @package Kpicaza\RedisETagCache
@@ -14,9 +15,9 @@ class RedisETagCache implements ETagCacheInterface
     /**
      * RedisETagCache constructor.
      * @param ETagGeneratorInterface $generator
-     * @param Client $client
+     * @param ClientInterface $client
      */
-    public function __construct(ETagGeneratorInterface $generator, Client $client)
+    public function __construct(ETagGeneratorInterface $generator, ClientInterface $client)
     {
         $this->client = $client;
         $this->generator = $generator;

@@ -34,10 +34,11 @@ class CacheTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(md5(self::STRING_VALUE), $etag);
     }
 
-    public function testETagCreateWithEmptyValueShouldThrownEmptyETagException()
+    public function testETagCreateWithEmptyValueShouldReturnNull()
     {
-        $this->setExpectedException('\Kpicaza\RedisETagCache\Exception\EmptyETagException');
         $etag = $this->generator->create('');
+
+        $this->assertEquals(null, $etag);
     }
 
     public function testCacheSetETagWithStringValueReturnTrue()
